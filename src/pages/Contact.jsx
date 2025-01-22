@@ -106,7 +106,7 @@ function Contact() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:bg-dark dark:border-gray-600 focus:ring-2 focus:ring-primary"
                 required
               />
             </div>
@@ -120,7 +120,7 @@ function Contact() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:bg-dark dark:border-gray-600 focus:ring-2 focus:ring-primary"
                 required
               />
             </div>
@@ -134,7 +134,7 @@ function Contact() {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:bg-dark dark:border-gray-600 focus:ring-2 focus:ring-primary"
                 required
               />
             </div>
@@ -148,7 +148,7 @@ function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 rows="6"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:bg-dark dark:border-gray-600 focus:ring-2 focus:ring-primary"
                 required
               ></textarea>
             </div>
