@@ -14,14 +14,14 @@ function Services() {
         "Progressive Web Apps",
         "Cross-browser Compatibility"
       ],
-      price: "$80/hour",
+      price: "",
       cta: "Start Project",
       testimonial: {
-        text: "The new React dashboard reduced our data entry time by 65% and eliminated manual reporting tasks. The responsive design works flawlessly across all our devices.",
-        author: "Alex",
-        role: "Operations Manager",
-        company: "TechFlow Solutions",
-        location: "Austin, TX"
+        text: " The responsive design works flawlessly across all our devices.",
+        author: "Mohammed Hussain",
+        role: "CEO",
+        company: "Al Razack Tours International",
+        location: "Tumkur, India"
       }
     },
     // ... other services remain the same ...
