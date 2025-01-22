@@ -83,6 +83,7 @@ function Navbar({ darkMode, setDarkMode }) {
             >
               {isOpen ? <HiX className="h-6 w-6" /> : <HiMenu className="h-6 w-6" />}
             </motion.button>
+            
           </div>
         </div>
       </div>
@@ -113,6 +114,14 @@ function Navbar({ darkMode, setDarkMode }) {
                   </Link>
                 </motion.div>
               ))}
+              <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setDarkMode(!darkMode)}
+              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light"
+            >
+              {darkMode ? <HiSun className="h-5 w-5" /> : <HiMoon className="h-5 w-5" />}
+            </motion.button>
             </div>
           </motion.div>
         )}
