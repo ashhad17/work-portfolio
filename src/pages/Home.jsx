@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Portfolio from './Portfolio';
 
 function Home() {
   return (
@@ -30,9 +31,7 @@ function Home() {
       {/* Featured Projects */}
       <section className="mb-16">
         <h2 className="section-title">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Project cards will go here */}
-        </div>
+        <Portfolio/>
       </section>
 
       {/* Services Overview */}

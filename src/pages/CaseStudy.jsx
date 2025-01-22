@@ -7,23 +7,19 @@ function CaseStudy() {
   // This would typically fetch case study data based on the ID
   // For now, we'll use static data
   const caseStudy = {
-    title: "E-commerce Platform Case Study",
-    client: "RetailCo Inc.",
-    duration: "3 months",
-    challenge: "The client needed a modern e-commerce platform that could handle high traffic and provide a seamless mobile shopping experience.",
-    solution: "Implemented a React-based frontend with a Node.js backend, utilizing modern e-commerce best practices and mobile-first design principles.",
+    title: "Tours and Travels Agency Website",
+    client: "Al Razack Tours International",
+    duration: "1 months",
+    challenge: "The client needed a modern website experience.",
+    solution: "Implemented a React-based frontend with a Firebase backend, utilizing modern website with mobile-first design principles.",
     results: [
-      "156% increase in online sales",
-      "45% improvement in mobile conversion rate",
-      "65% reduction in cart abandonment",
+      "56% increase in customers",
       "98% positive user feedback"
     ],
     technologies: [
       "React",
-      "Node.js",
-      "MongoDB",
-      "AWS",
-      "Stripe"
+      "Tailwind CSS",
+      "Firebase",
     ]
   };
 

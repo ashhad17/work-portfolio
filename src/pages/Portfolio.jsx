@@ -1,26 +1,44 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
+import alrazack from './images/alrazack.png'
+import { span } from 'framer-motion/client';
 function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A full-featured online store with cart and payment integration",
-      client: "RetailCo Inc.",
-      date: "March 2024",
+      title: "Tours and Travels Agency Website",
+      description: "A full-featured tours and travels web application",
+      client: "Al Razack Tours International.",
+      date: "August 2024",
       category: "web",
-      image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
+      image: alrazack,
+      isLive:true,
+      url:"https://www.alrazacktours.com/",
       testimonial: {
-        text: "Our online sales increased by 156% within three months of launching the new platform. The mobile-first design and streamlined checkout process transformed how we do business online.",
-        author: "Sarah",
-        role: "E-commerce Manager",
-        location: "Boston, MA"
+        text: "Customers increased by 56% within three months of launching the website. Happy with Responsive Design",
+        author: "Mohammed Hussain",
+        role: "CEO, Alrazack Tours International",
+        location: "Tumkur, India"
       }
     },
+    // {
+    //   id: 1,
+    //   title: "E-commerce Platform",
+    //   description: "A full-featured online store with cart and payment integration",
+    //   client: "RetailCo Inc.",
+    //   date: "March 2024",
+    //   category: "web",
+    //   image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
+    //   testimonial: {
+    //     text: "Our online sales increased by 156% within three months of launching the new platform. The mobile-first design and streamlined checkout process transformed how we do business online.",
+    //     author: "Sarah",
+    //     role: "E-commerce Manager",
+    //     location: "Boston, MA"
+    //   }
+    // }
     // ... other projects remain the same ...
   ];
 
@@ -58,6 +76,7 @@ function Portfolio() {
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Completed: {project.date}
                 </p>
+                {/* <img src={alrazack} alt="" className='h-full w-96 mr-5'/> */}
               </div>
               <blockquote className="border-l-4 border-primary pl-4 mb-4">
                 <p className="italic text-gray-600 dark:text-gray-400 mb-2">{project.testimonial.text}</p>
@@ -69,10 +88,26 @@ function Portfolio() {
               </blockquote>
               <Link 
                 to={`/case-study/${project.id}`}
-                className="btn btn-primary w-full inline-block text-center transition-transform hover:scale-105 active:scale-95"
+                className="mt-2 mb-2 btn btn-primary w-full inline-block text-center transition-transform hover:scale-105 active:scale-95"
               >
                 View Case Study
               </Link>
+              
+              
+              {
+                (project.isLive)?(<a 
+                
+                  href={project.url}
+                  target='_blank'
+                  className="mt-2 mb-2 btn btn-primary w-full inline-block text-center transition-transform hover:scale-105 active:scale-95"
+                >
+                  Live Preview
+                </a>):( 
+                  <p className="italic text-gray-600 dark:text-gray-400 mb-2">Live Preview Not Available</p>
+                )
+                
+              }
+              
             </div>
           </motion.div>
         ))}

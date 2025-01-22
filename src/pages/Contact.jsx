@@ -52,26 +52,26 @@ function Contact() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Contact Information */}
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <div className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg">
+            <div className="bg-white dark:bg-dark-light p-4 rounded-lg shadow-lg">
               <FaPhone className="h-6 w-6 text-primary mb-4" />
               <h3 className="text-lg font-bold mb-2">Phone</h3>
-              <p className="text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
+              <p className="text-gray-600 dark:text-gray-400">+91 8197172781</p>
             </div>
-            <div className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg">
+            <div className="bg-white dark:bg-dark-light p-4 rounded-lg shadow-lg">
               <FaEnvelope className="h-6 w-6 text-primary mb-4" />
               <h3 className="text-lg font-bold mb-2">Email</h3>
-              <p className="text-gray-600 dark:text-gray-400">contact@example.com</p>
+              <p className="text-gray-600 dark:text-gray-400">mohammedashhad.work@gmail.com</p>
             </div>
-            <div className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg">
+            <div className="bg-white dark:bg-dark-light p-4 rounded-lg shadow-lg">
               <FaMapMarkerAlt className="h-6 w-6 text-primary mb-4" />
               <h3 className="text-lg font-bold mb-2">Location</h3>
-              <p className="text-gray-600 dark:text-gray-400">123 Business St, City, Country</p>
+              <p className="text-gray-600 dark:text-gray-400">Tumkur, Karnataka, India</p>
             </div>
-            <div className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg">
+            <div className="bg-white dark:bg-dark-light p-4 rounded-lg shadow-lg">
               <FaClock className="h-6 w-6 text-primary mb-4" />
               <h3 className="text-lg font-bold mb-2">Business Hours</h3>
               <p className="text-gray-600 dark:text-gray-400">Mon-Fri: 9AM - 6PM</p>

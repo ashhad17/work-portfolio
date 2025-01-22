@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { FaSearch, FaShareAlt, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 function Blog() {
@@ -107,7 +108,8 @@ function Blog() {
             key={post.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
             className="bg-white dark:bg-dark-light rounded-lg overflow-hidden shadow-lg"
           >
             <img
@@ -141,17 +143,23 @@ function Blog() {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <button className="p-2 hover:text-primary">
+                  <button className="p-2 hover:text-primary transition-colors">
                     <FaFacebook />
                   </button>
-                  <button className="p-2 hover:text-primary">
+                  <button className="p-2 hover:text-primary transition-colors">
                     <FaTwitter />
                   </button>
-                  <button className="p-2 hover:text-primary">
+                  <button className="p-2 hover:text-primary transition-colors">
                     <FaLinkedin />
                   </button>
                 </div>
               </div>
+              <Link
+                to={`/blog/${post.id}`}
+                className="btn btn-primary w-full mt-4 inline-block text-center transition-transform hover:scale-105 active:scale-95"
+              >
+                Read More
+              </Link>
             </div>
           </motion.article>
         ))}

@@ -18,26 +18,24 @@ function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-bold mb-4">Contact</h3>
-            <p className="mb-2">Email: your.email@example.com</p>
-            <p>Location: Your City, Country</p>
+            <p className="mb-2">Email: mohammedashhad.work@gmail.com</p>
+            <p>Location: Tumkur, Karnataka, India</p>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-4">Social</h3>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+              <a href="https://github.com/ashhad17" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
                 <FaGithub className="h-6 w-6" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+              <a href="https://www.linkedin.com/in/mohammedashhad2105/" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
                 <FaLinkedin className="h-6 w-6" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-                <FaTwitter className="h-6 w-6" />
-              </a>
+              
             </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mohammed Ashhad. All rights reserved.</p>
         </div>
       </div>
     </footer>

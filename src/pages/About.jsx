@@ -1,42 +1,39 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import abdul from './images/abdul.jpg'
+
+import ashhad from './images/ashhad.jpg'
 
 function About() {
   const team = [
     {
-      name: "John Doe",
+      id: 1,
+      name: "Mohammed Ashhad",
       role: "Founder & Lead Developer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200",
-      bio: "10+ years of experience in web development"
+      image: ashhad,
+      bio: "Passionate about creating beautiful user experiences"
     },
     {
-      name: "Jane Smith",
-      role: "UI/UX Designer",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200",
-      bio: "Passionate about creating beautiful user experiences"
+      id: 2,
+      name: "Abdul Rahman",
+      role: "Co Founder & Digital Marketing Manager",
+      image: "abdul",
+      bio: "2+ years Experience in digital marketing"
     }
   ];
 
   const milestones = [
     {
-      year: "2020",
+      year: "2024",
       title: "Company Founded",
       description: "Started with a vision to create impactful digital solutions"
     },
     {
-      year: "2021",
-      title: "Team Expansion",
-      description: "Grew to a team of 5 talented professionals"
+      year: "2024",
+      title: "First Project",
+      description: "Sucessfully Completed first project."
     },
-    {
-      year: "2022",
-      title: "50+ Projects Completed",
-      description: "Successfully delivered projects across various industries"
-    },
-    {
-      year: "2023",
-      title: "International Recognition",
-      description: "Received multiple awards for excellence in web development"
-    }
+    
   ];
 
   return (
@@ -51,10 +48,7 @@ function About() {
         <h1 className="text-4xl font-bold text-center mb-8">Our Story</h1>
         <div className="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-400">
           <p className="mb-4">
-            Founded in 2020, we started with a simple mission: to create exceptional digital experiences that make a difference.
-          </p>
-          <p>
-            Today, we're a team of passionate developers and designers working together to bring innovative solutions to businesses worldwide.
+            Founded in 2024, we started with a simple mission: to create exceptional digital experiences that make a difference.
           </p>
         </div>
       </motion.div>
@@ -98,19 +92,32 @@ function About() {
       >
         <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {team.map((member, index) => (
-            <div key={index} className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg flex items-center">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-24 h-24 rounded-full object-cover mr-6"
-              />
-              <div>
-                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                <p className="text-primary mb-2">{member.role}</p>
-                <p className="text-gray-600 dark:text-gray-400">{member.bio}</p>
+          {team.map((member) => (
+            <motion.div
+              key={member.id}
+              whileHover={{ scale: 1.02 }}
+              className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg"
+            >
+              <div className="flex items-center mb-6">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-24 h-24 rounded-full object-cover mr-6"
+                  
+                />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                  <p className="text-primary mb-2">{member.role}</p>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">{member.bio}</p>
+                  <Link
+                    to={`/team/${member.id}`}
+                    className="btn btn-primary inline-block transition-transform hover:scale-105 active:scale-95"
+                  >
+                    View Profile
+                  </Link>
+                </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>
