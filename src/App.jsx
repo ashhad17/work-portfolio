@@ -11,6 +11,7 @@ import BlogPost from './pages/BlogPost';
 import TeamMember from './pages/TeamMember';
 import CaseStudy from './pages/CaseStudy';
 import Footer from './components/Footer';
+import ChatBot from './components/ChatBot';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,12 +35,13 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<Blog />} />
+            // <Route path="/blog" element={<ChatBot />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/team/:id" element={<TeamMember />} />
             <Route path="/case-study/:id" element={<CaseStudy />} />
           </Routes>
         </main>
+        <ChatBot/>
         <Footer />
       </div>
     </Router>

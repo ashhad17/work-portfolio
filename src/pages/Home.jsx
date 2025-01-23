@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Portfolio from './Portfolio';
-
+// import ChatBot from '../components/ChatBot';
 function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -58,6 +58,7 @@ function Home() {
           </div>
         </div>
       </section>
+      {/* <ChatBot/> */}
     </div>
   );
 }

@@ -174,7 +174,7 @@
 
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import { FaPhone,FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 function Contact() {
@@ -253,8 +253,8 @@ function Contact() {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white dark:bg-dark-light p-4 rounded-lg shadow-lg">
-              <FaPhone className="h-6 w-6 text-primary mb-4" />
-              <h3 className="text-lg font-bold mb-2">Phone</h3>
+              <FaWhatsapp className="h-6 w-6 text-primary mb-4" />
+              <h3 className="text-lg font-bold mb-2">WhatsApp</h3>
               <p className="text-gray-600 dark:text-gray-400">+91 8197172781</p>
             </div>
             <div className="bg-white dark:bg-dark-light p-4 rounded-lg shadow-lg">

@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import CaseStudy from './pages/CaseStudy';
 import Footer from './components/Footer';
-
+import ChatBot from './components/ChatBot';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -32,10 +32,17 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog" element={<ChatBot />} />
             <Route path="/case-study/:id" element={<CaseStudy />} />
+            {/* <Route path="/chatbot" element={<ChatBot/>}/> */}
           </Routes>
         </main>
+      {/* <ChatHistory /> */}
+
+        {/* <div className="fixed bottom-4 left-4 z-50"> */}
+  
+{/* </div> */}
+<ChatBot/>
         <Footer />
       </div>
     </Router>
