@@ -17,15 +17,22 @@ function About() {
 
   const milestones = [
     {
-      year: "2024",
-      title: "Company Founded",
-      description: "Started with a vision to create impactful digital solutions"
+      year: "2025",
+      title: "Second Project",
+      description: "Sucessfully Completed Second project."
     },
     {
       year: "2024",
       title: "First Project",
       description: "Sucessfully Completed first project."
+    }
+    ,
+    {
+      year: "2024",
+      title: "Company Founded",
+      description: "Started with a vision to create impactful digital solutions"
     },
+    
     
   ];
 
