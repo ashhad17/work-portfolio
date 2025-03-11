@@ -12,13 +12,6 @@ function About() {
       role: "Founder & Lead Developer",
       image: ashhad,
       bio: "Passionate about creating beautiful user experiences"
-    },
-    {
-      id: 2,
-      name: "Abdul Rahman",
-      role: "Co Founder & Digital Marketing Manager",
-      image: "abdul",
-      bio: "2+ years Experience in digital marketing"
     }
   ];
 

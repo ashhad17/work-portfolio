@@ -1,27 +1,39 @@
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-function CaseStudy() {
-  const { id } = useParams();
-
-  // This would typically fetch case study data based on the ID
-  // For now, we'll use static data
-  const caseStudy = {
+const projects = [
+  {
+    id: "1",
     title: "Tours and Travels Agency Website",
     client: "Al Razack Tours International",
-    duration: "1 months",
+    duration: "1 month",
     challenge: "The client needed a modern website experience.",
-    solution: "Implemented a React-based frontend with a Firebase backend, utilizing modern website with mobile-first design principles.",
-    results: [
-      "56% increase in customers",
-      "98% positive user feedback"
-    ],
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Firebase",
-    ]
-  };
+    solution: "Implemented a React-based frontend with a Firebase backend, utilizing modern website with mobile-first design principles.Also email and social media integrations",
+    results: ["56% increase in customers", "98% positive user feedback"],
+    technologies: ["React", "Tailwind CSS", "Firebase"]
+  },
+  {
+    id: "2",
+    // title: "E-Commerce Platform",
+    // client: "Golden Leo Foods Pvt LTD",
+    // duration: "3 months",
+    // challenge: "Building a scalable and user-friendly shopping experience.",
+    // solution: "Developed a MERN stack platform with secure payment integrations and real-time order tracking.",
+    // results: ["80% customer satisfaction", "20% sales growth in the first quarter"],
+    // technologies: ["React", "Node.js", "MongoDB", "Express"]
+    title: "Tours and Travels Agency Website",
+    client: "Kabatulla Tours International",
+    duration: "15 days",
+    challenge: "The client needed a modern website experience . With responsive design,SEO and user friendly",
+    solution: "Implemented a React-based frontend with a Supabase backend, utilizing modern website with mobile-first design principles.Also email and social media integrations",
+    results: [" Increase in customers interations", "Positive user feedback"],
+    technologies: ["React", "Tailwind CSS", "Supabase"]
+  }
+];
+
+function CaseStudy() {
+  const { id } = useParams();
+  const caseStudy = projects.find(project => project.id === id) || {};
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -46,7 +58,7 @@ function CaseStudy() {
           <div className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-4">Technologies Used</h2>
             <div className="flex flex-wrap gap-2">
-              {caseStudy.technologies.map((tech, index) => (
+              {caseStudy.technologies?.map((tech, index) => (
                 <span
                   key={index}
                   className="bg-primary text-white px-3 py-1 rounded-full text-sm"
@@ -72,7 +84,7 @@ function CaseStudy() {
           <section className="bg-white dark:bg-dark-light p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-4">Results</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
-              {caseStudy.results.map((result, index) => (
+              {caseStudy.results?.map((result, index) => (
                 <li key={index}>{result}</li>
               ))}
             </ul>

@@ -23,6 +23,22 @@ function Portfolio() {
         role: "CEO, Alrazack Tours International",
         location: "Tumkur, India"
       }
+    },{
+      id: 2,
+      title: "Tours and Travels Agency Website",
+      description: "A full-featured tours and travels web application",
+      client: "Kabatulla Tours International.",
+      date: "February 2025",
+      category: "web",
+      image: alrazack,
+      isLive:true,
+      url:"https://www.kabatullatours.com/",
+      testimonial: {
+        text: "Customers intraction raised one month of launching the website. Happy with Responsive Design and SEO",
+        author: "Noor Mohammed",
+        role: "Co-Owner, Kabatulla Tours International",
+        location: "Banglore, India"
+      }
     },
     // {
     //   id: 1,
